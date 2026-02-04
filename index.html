@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JONAS SOARES | Gestão & Tecnologia</title>
+    <style>
+        :root {
+            --gold: #d4af37;
+            --bg: #000000;
+            --card: #0a0a0a;
+            --text: #ffffff;
+            --border: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            margin: 0;
+            background: linear-gradient(135deg, #f9e29c, var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .btn-home {
+            margin-top: 40px;
+            padding: 20px 50px;
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: 0.4s;
+        }
+
+        .btn-home:hover {
+            background: var(--gold);
+            color: #000;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .section-title {
+            color: var(--gold);
+            font-size: 1.8rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 15px;
+            margin: 80px 0 40px;
+            text-transform: uppercase;
+        }
+
+        /* ACORDEÃO ESTRUTURADO */
+        .cert-wrapper { margin-bottom: 10px; }
+        .cert-check { display: none; }
+
+        .cert-btn {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .cert-btn:hover { border-color: var(--gold); }
+
+        .cert-content {
+            max-height: 0;
+            overflow: hidden;
+            background: #050505;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        .cert-check:checked + .cert-btn {
+            background: var(--gold);
+            color: #000;
+        }
+
+        .cert-check:checked ~ .cert-content {
+            max-height: 1500px;
+            padding: 20px;
+            border: 1px solid var(--gold);
+            border-top: none;
+        }
+
+        .full-name-item {
+            display: block;
+            padding: 8px 0;
+            border-bottom: 1px solid #111;
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 80px 0;
+            border-top: 1px solid var(--border);
+            margin-top: 100px;
+        }
+
+        .buttons-container {
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Estilo do Botão da Empresa (Dourado Sólido - Chama mais atenção) */
+    .btn-main {
+        padding: 18px 35px;
+        background: var(--gold);
+        color: #000;
+        text-decoration: none;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.4s;
+        border: 1px solid var(--gold);
+    }
+
+    .btn-main:hover {
+        background: transparent;
+        color: var(--gold);
+        box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+    }
+
+    /* Estilo do Botão do Currículo (Apenas Borda - Mais discreto) */
+    .btn-secondary {
+        padding: 18px 35px;
+        background: transparent;
+        border: 1px solid var(--gold);
+        color: var(--gold);
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.4s;
+    }
+
+    .btn-secondary:hover {
+        background: rgba(212, 175, 55, 0.1);
+        transform: translateY(-3px);
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>JONAS SOARES</h1>
+            <p style="color: var(--gold); letter-spacing: 3px; font-weight: 300;">TECNOLOGIA & GESTÃO ESTRATÉGICA</p>
+            
+            <div class="buttons-container">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <a href="Jonas_Soarespdf" target="_blank" class="btn-secondary">VER CURRÍCULO</a>
+                    <span style="font-size: 0.7rem; color: #666; margin-top: 8px; text-transform: uppercase; letter-spacing: 1px;">Trajetória & Certificações</span>
+                </div>
+
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <a href="https://nexodigital-eosin.vercel.app/" target="_blank" class="btn-main">PROJETOS & SERVIÇOS</a>
+                    <span style="font-size: 0.7rem; color: var(--gold); margin-top: 8px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold;">
+                        Veja na prática: Softwares, Dashboards e Automações
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <h2 class="section-title">Formação Acadêmica</h2>
+        <div style="background: var(--card); padding: 25px; border-left: 3px solid var(--gold);">
+            <p><strong>Gestão da Tecnologia da Informação</strong> – Anhanguera (Concluído)</p>
+            <p><strong>Formação em Switches e Routers</p>
+            <p><strong>Formação Lean, Governança e Agilidade Escalada</p>
+            <p><strong>Formação Figma</p>
+        </div>    
+
+        <h2 id="certificacoes" class="section-title">Certificações & Especializações</h2>
+
+        <div class="cert-wrapper">
+            <input type="checkbox" id="c1" class="cert-check">
+            <label for="c1" class="cert-btn">AGILIDADE, GESTÃO E GOVERNANÇA – ALURA <span>[+]</span></label>
+            <div class="cert-content">
+                <span class="full-name-item">Transformação Organizacional: Lean-Ágil além da TI</span>
+                <span class="full-name-item">Scrum Escalado: LeSS Framework</span>
+                <span class="full-name-item">Práticas de Desprojetização: Flow Framework</span>
+                <span class="full-name-item">Organização de Equipes Ágeis: Os Papéis Existentes em uma Equipe</span>
+                <span class="full-name-item">OKR: Construindo Metas Ágeis</span>
+                <span class="full-name-item">OKR: Direcionando seu Negócio para Resultados</span>
+                <span class="full-name-item">Lean Agile Budgeting: Princípios para Orçamentação Eficaz na era Digital</span>
+                <span class="full-name-item">Governança de TI: Gestão de Programas, Projetos e Produtos</span>
+                <span class="full-name-item">Gestão de Produtos Digitais: Produto vs. Projeto</span>
+                <span class="full-name-item">Certificação PMI-ACP: Entenda mais sobre o Scrum</span>
+                <span class="full-name-item">Ágil Escalado: Frameworks para Grandes Desenvolvimentos</span>
+                <span class="full-name-item">Ferramentas para Agilidade: Visão Geral sobre Controle de Projetos e Produtos</span>
+            </div>
+        </div>
+
+        <div class="cert-wrapper">
+            <input type="checkbox" id="c2" class="cert-check">
+            <label for="c2" class="cert-btn">FIGMA – ALURA <span>[+]</span></label>
+            <div class="cert-content">
+                <span class="full-name-item">Conhecendo a Ferramenta Figma</span>
+                <span class="full-name-item">Prototipagem Interativa e Animações</span>
+                <span class="full-name-item">Componentes, Auto Layout e Máscaras</span>
+            </div>
+        </div>
+
+        <div class="cert-wrapper">
+            <input type="checkbox" id="c3" class="cert-check">
+            <label for="c3" class="cert-btn">OUTRAS CERTIFICAÇÕES <span>[+]</span></label>
+            <div class="cert-content">
+                <span class="full-name-item">AWS Cloud Practitioner Essentials</span>
+                <span class="full-name-item">Python para Análise de Dados</span>
+                <span class="full-name-item">Six Sigma Yellow Belt</span>
+            </div>
+        </div>
+
+        <footer>
+            <p>Jonas Soares | (12) 99224-8693</p>
+            <p style="color: var(--gold);">jonassoaresraymund@gmail.com</p>
+        </footer>
+    </div>
+
+</body>
+</html>

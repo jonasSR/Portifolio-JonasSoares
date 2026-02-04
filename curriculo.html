@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Jonas Soares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 40px 0;
+            color: #333;
+        }
+
+        .cv-page {
+            width: 210mm; /* Tamanho A4 */
+            min-height: 297mm;
+            background: white;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Cabeçalho igual à foto */
+        .cv-header {
+            background-color: #5b5b5b; /* Cinza escuro da imagem */
+            color: white;
+            padding: 40px;
+        }
+
+        .cv-header h1 {
+            font-size: 3.5rem;
+            margin: 0 0 15px 0;
+            letter-spacing: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .cv-header .contact-info {
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        /* Estrutura de Colunas */
+        .cv-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            border-bottom: 2px solid #000;
+            padding-bottom: 3px;
+            margin-top: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin: 15px 0 2px 0;
+            font-weight: bold;
+        }
+
+        .meta {
+            font-size: 0.85rem;
+            color: #444;
+            margin-bottom: 8px;
+        }
+
+        p, li {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin: 5px 0;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin: 5px 0;
+        }
+
+        .cert-section p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Ajuste para impressão */
+        @media print {
+            body { background: none; padding: 0; }
+            .cv-page { box-shadow: none; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-page">
+    <div class="cv-header">
+        <h1>JONAS SOARES</h1>
+        <div class="contact-info">
+            Tel.: (12) 99224-8693<br>
+            Endereço: Rua Julião Bento de Oliveira Guimarães nº 46 - Santa Terezinha CEP: 12140-000 São Luiz do Paraitinga /SP<br>
+            E-mail: jonassoaresraymund@gmail.com LinkedIn: linkedin.com/in/jonassoares/<br>
+            CNH: D
+        </div>
+    </div>
+
+    <div class="cv-body">
+        <div class="left-col">
+            <h2>FORMAÇÕES</h2>
+            <p>Ensino Superior – Concluído Gestão da Tecnologia da Informação – Anhanguera</p>
+            <p>Formação Figma – Alura</p>
+            <p>Formação Lean, Governança e Agilidade Escalada – Alura</p>
+            <p>Formação em Switches e Routers - Voz e Dados</p>
+
+            <h2>RESUMO PROFISSIONAL</h2>
+            <p>Sou um profissional com mais de 10 anos de experiência em tecnologia da informação, atuando como Supervisor de Help Desk e Líder de Equipes. Possuo um histórico sólido em gestão de indicadores, atendimento ao cliente e desenvolvimento de software. Tenho facilidade em liderar equipes de alto desempenho, promovendo treinamentos, engajamento e foco em resultados estratégicos. Trabalho bem sob pressão, mantendo o controle e a assertividade em projetos técnicos e na gestão de pessoas.</p>
+
+            <h2>HABILIDADES</h2>
+            <p><strong>Técnicas:</strong> PowerBI, Python, Gestão de TI, Gestão de Projetos, Indicadores de Performance (KPIs).</p>
+            <p><strong>Interpessoais:</strong> Liderança, Comunicação Clara, Trabalho em Equipe, Foco em Resultados, Resiliência.</p>
+            <p><strong>Gestão:</strong> Supervisão de Help Desk, Treinamento de Equipes, Gestão de Indicadores, Atendimento ao Cliente.</p>
+
+            <div class="cert-section">
+                <h2>CERTIFICAÇÕES</h2>
+                <p>Agilidade, Gestão e Governança – Alura</p>
+                <ul>
+                    <li>Transformação Organizacional: Lean-Ágil além da TI</li>
+                    <li>Scrum Escalado: LeSS Framework</li>
+                    <li>Práticas de Desprojetização: Flow Framework</li>
+                    <li>Organização de Equipes Ágeis: Os Papéis Existentes em uma Equipe</li>
+                    <li>OKR: Construindo Metas Ágeis</li>
+                    <li>OKR: Direcionando seu Negócio para Resultados</li>
+                    <li>Lean Agile Budgeting: Princípios para Orçamentação Eficaz na era Digital</li>
+                    <li>Governança de TI: Gestão de Programas, Projetos e Produtos</li>
+                    <li>Gestão de Produtos Digitais: Produto vs. Projeto</li>
+                    <li>Certificação PMI-ACP: Entenda mais sobre o Scrum</li>
+                    <li>Ágil Escalado: Frameworks para Grandes Desenvolvimentos</li>
+                    <li>Ferramentas para Agilidade: Visão Geral sobre Controle de Projetos e Produtos</li>
+                </ul>
+
+                <p>Figma – Alura</p>
+                <ul>
+                    <li>Conhecendo a Ferramenta Figma</li>
+                    <li>Prototipagem Interativa e Animações</li>
+                    <li>Componentes, Auto Layout e Máscaras</li>
+                </ul>
+
+                <p>Outras</p>
+                <ul>
+                    <li>AWS Cloud Practitioner Essentials</li>
+                    <li>Python para Análise de Dados</li>
+                    <li>Six Sigma Yellow Belt</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <h2>HISTÓRICO PROFISSIONAL</h2>
+            
+            <h3>Diretor do Departamento de Turismo, Cultura e Econ.</h3>
+            <div class="meta">Pref. São Luiz do Paraitinga | Jan. de 2025 - Jul. de 2025</div>
+            <ul>
+                <li>Gestão completa dos departamentos de Turismo, Cultura e Economia, coordenando equipes, projetos e operações.</li>
+                <li>Planejamento e execução de ações estratégicas para desenvolvimento turístico, cultural e econômico do município.</li>
+            </ul>
+
+            <h3>Estágio em Gestão de Projetos</h3>
+            <div class="meta">Ether City | Dez. de 2023 - Jan. de 2025</div>
+            <ul>
+                <li>Planejamento e monitoramento de projetos estratégicos.</li>
+                <li>Controle de cronogramas e entregáveis.</li>
+                <li>Suporte a equipes multifuncionais.</li>
+            </ul>
+
+            <h3>Supervisor HelpDesk II</h3>
+            <div class="meta">Net Fácil (VellozNet) | Out. de 2020 - Mai. de 2021</div>
+            <ul>
+                <li>Supervisão de equipe técnica, gestão de conflitos e suporte a clientes críticos.</li>
+                <li>Responsável pela contratação, treinamento e desenvolvimento dos colaboradores.</li>
+                <li>Elaboração e análise de relatórios de produtividade e indicadores de desempenho.</li>
+                <li>Implementação de melhorias nos processos de suporte e atendimento.</li>
+            </ul>
+
+            <h3>Analista de Suporte Computacional</h3>
+            <div class="meta">Net Fácil (VellozNet) | Jun. de 2020 - Out. de 2020</div>
+            <ul>
+                <li>Suporte Remoto, Suporte técnico cliente/usuário e suporte aos técnicos.</li>
+                <li>Treinamento de colaboradores e melhorias nos processos de suporte técnico.</li>
+            </ul>
+
+            <h3>Tec.NII/NI e Sup. De Campo</h3>
+            <div class="meta">Quick/+Fibra | Out. de 2018 - Fev. de 2020</div>
+            <ul>
+                <li>Instalação e suporte de Rede Fibra LA.</li>
+                <li>Supervisão de colaboradores em campo.</li>
+                <li>Elaboração de escalas de trabalho, auditoria das instalações, treinamentos e DDS.</li>
+            </ul>
+
+            <h3>Tec. em Suporte Externo</h3>
+            <div class="meta">Flix Telecom | Out. de 2016 - Jan. de 2018</div>
+            <ul>
+                <li>Instalação e suporte de redes (cabeada e fibra óptica – FTTx).</li>
+                <li>Manutenção de rádio Ubiquiti e Intelbras, além de montagem de torres.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
